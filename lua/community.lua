@@ -6,7 +6,9 @@
 return {
 	"AstroNvim/astrocommunity",
 	{ import = "astrocommunity.pack.lua" },
+	{ import = "astrocommunity.pack.python-ruff" },
+	{ import = "astrocommunity.pack.rust" },
 	{ import = "astrocommunity.editing-support/rainbow-delimiters-nvim" },
-	{ import = "astrocommunity.pack.java" },
-	{ import = "astrocommunity.lsp.nvim-java" },
+	-- { import = "astrocommunity.pack.java" },
+	-- { import = "astrocommunity.lsp.nvim-java" },
 }
