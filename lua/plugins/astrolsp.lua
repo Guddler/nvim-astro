@@ -95,12 +95,23 @@ return {
 				},
 				["<Leader>lp"] = {
 					function() vim.cmd.RustLsp('run') end,
-					desc = "Rust Run",
+					desc = "Run",
 					cond = "rust_analyzer",
 				},
 				["<Leader>lP"] = {
+					function() vim.cmd.RustLsp('runnables') end,
+					desc = "Run Target",
+					cond = "rust_analyzer",
+				},
+				["<Leader>lk"] = {
 					function() vim.cmd.RustLsp('debug') end,
-					desc = "Rust Debug",
+					desc = "Debug",
+					cond = "rust_analyzer",
+				},
+				["<Leader>lK"] = {
+					function() vim.cmd.RustLsp('debuggables') end,
+					desc = "Debug Target",
+					cond = "rust_analyzer",
 				}
 			},
 		},
