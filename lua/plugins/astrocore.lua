@@ -68,6 +68,8 @@ return {
 				["<C-S-Left>"] = { "<Cmd>vertical resize -2<CR>", desc = "Resize split left" },
 				["<C-S-Right>"] = { "<Cmd>vertical resize +2<CR>", desc = "Resize split right" },
 
+				-- Make default ToggleTerm float
+				["<F7>"] = { "<Cmd>ToggleTerm direction=float<CR>" },
 				-- Remove explicit size from ToggleTerm
 				["<Leader>tv"] = { "<Cmd>ToggleTerm direction=vertical<CR>", desc = "ToggleTerm Vertical Split" },
 				["<Leader>th"] = { "<Cmd>ToggleTerm direction=horizontal<CR>", desc = "ToggleTerm Horizontal Split" },
